@@ -3,11 +3,11 @@ import "./Fooditem.css"
 import { assets } from "../../../assets/frontend_assets/assets.js"
 import { StoreContext } from '../../../context/StoreContext.jsx';
 const Fooditem = ({ id, name, price, description, image, category }) => {
-  const { cartItems, addToCart, removeFromCart, url } = useContext(StoreContext)
+  const { cartItems, addToCart, removeFromCart, url, FoodPopup } = useContext(StoreContext)
   return (
-    <div className='food-item'>
-      <div className="food-item-img-container">
-        <img className='food-item-image' src={url + "/images/" + image} alt="" loading="lazy" />
+    <div className='food-item' >
+      < div className="food-item-img-container" >
+        <img className='food-item-image' src={url + "/images/" + image} alt="" loading="lazy" onClick={() => { FoodPopup(id) }} />
         {!cartItems[id] ?
           <img className='add' onClick={() => addToCart(id)} src={assets.add_icon_white} alt="" /> :
           <div className='food-item-counter'>
@@ -15,8 +15,8 @@ const Fooditem = ({ id, name, price, description, image, category }) => {
           </div>
 
         }
-      </div>
-      <div className="food-item-info">
+      </div >
+      <div className="food-item-info" onClick={() => { FoodPopup(id) }} >
         <div className="food-item-name-rating">
           <p>{name}</p>
           <img src={assets.rating_starts} alt="" />
@@ -26,8 +26,9 @@ const Fooditem = ({ id, name, price, description, image, category }) => {
         <p className="food-item-price">${price}</p>
       </div>
 
-    </div>
+    </div >
   )
 }
+
 
 export default Fooditem

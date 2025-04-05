@@ -7,6 +7,9 @@
   animation: fadeIn 1s;
 }
 .food-item:hover {
+  cursor: pointer;
+}
+.food-item:hover {
   transform: scale(1.02);
 }
 .food-item-image {

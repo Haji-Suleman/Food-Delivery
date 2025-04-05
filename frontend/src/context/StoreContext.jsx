@@ -40,7 +40,7 @@ const StoreContextProvider = (props) => {
             // If quantity reaches 0, remove the item completely
             if (newQuantity === 0) {
                 const updatedCart = { ...prev };
-                delete updatedCart[itemId]; 
+                delete updatedCart[itemId];
                 return updatedCart;
             }
 
@@ -75,6 +75,10 @@ const StoreContextProvider = (props) => {
         setCartItems(response.data.cartData);
 
     }
+    const FoodPopup = async (itemId) => {
+        console.log(cartItems[itemId])
+        return cartItems[itemId]
+    }
     const contextValue = {
         food_list,
         cartItems,
@@ -86,7 +90,8 @@ const StoreContextProvider = (props) => {
         setToken,
         token,
         inputValue,
-        setInputValue
+        setInputValue,
+        FoodPopup
     }
 
     return (
