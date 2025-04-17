@@ -16,6 +16,7 @@ const App = () => {
   return (
     <BrowserRouter> {/* Wrap everything with BrowserRouter */}
       <StoreContextProvider>
+
         <ToastContainer />
         {showLogin ? <LoginPopup setShowLogin={setShowLogin} /> : <></>}
         <div className="app">

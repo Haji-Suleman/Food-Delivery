@@ -4,7 +4,7 @@ export const connectDB = async () => {
   try {
     console.log("🚀 Attempting to connect to MongoDB...");
     const conn = await mongoose.connect(
-      "mongodb+srv://banol33255:newwelthypassword@cluster0.w3qrw.mongodb.net/food-web"
+      "mongodb://localhost:27017/ecommerceFoodWeb"
     );
     console.log(`✅ MongoDB connected: ${conn.connection.host}`);
   } catch (error) {
@@ -12,5 +12,6 @@ export const connectDB = async () => {
     process.exit(1);
   }
 };
+// The connection fo the database
 
 // "mongodb://localhost:27017/ecommerceFoodWeb"

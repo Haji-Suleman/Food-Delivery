@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "axios": "^1.8.4",
+    "framer-motion": "^12.7.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-pdf-html": "^2.1.3",
