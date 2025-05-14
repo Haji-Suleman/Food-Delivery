@@ -24,7 +24,7 @@ const loginUser = async (req, res) => {
 };
 
 //create register Token
-const createToken = (id) => {
+  const createToken = (id) => {
   return jwt.sign({ id }, process.env.JWT_SECRET);
 };
 
@@ -44,7 +44,7 @@ const registerUser = async (req, res) => {
         message: "Please enter a valid email",
       });
     }
-    if (password.length < 8) {
+    if (password.length < 8 && validator.isStrongPassword(password)) {
       return res.json({
         success: false,
         message: "Please enter a strong password",
@@ -59,9 +59,7 @@ const registerUser = async (req, res) => {
       password: hashedpassword,
     });
     const user = await newUser.save();
-    console.log(user);
     const token = createToken(user._id);
-    console.log(token);
     res.json({ success: true, token });
   } catch (error) {
     console.log(error);

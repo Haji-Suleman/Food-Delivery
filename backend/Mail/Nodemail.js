@@ -10,14 +10,14 @@ const mail = async (req, res) => {
       },
     });
 
-    const { items } = req.body;
+    const { items }  = req.body;
     console.log("The items are:", items);
 
     let itemsNew = ""; // Change from 'const' to 'let'
     const itemslength = items.length;
     for (let i = 0; i < itemslength; i++) {
       if (i === itemslength - 1) {
-        itemsNew += items[i].name + " x " + items[i].quantity;
+        itemsNew += items[i].name + " x " +  items[i].quantity;
       } else {
         itemsNew += items[i].name + " x " + items[i].quantity + ", ";
       }
