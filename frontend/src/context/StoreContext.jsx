@@ -4,7 +4,7 @@ export const StoreContext = createContext(null);
 const StoreContextProvider = (props) => {
     const [cartItems, setCartItems] = useState({})
     const [inputValue, setInputValue] = useState("");
-    const url = "https://food-delivery-backend-topaz.vercel.app/";
+    const url = "https://fully-functional-food-web-production-b639.up.railway.app/";
     const [token, setToken] = useState("")
     const [food_list, setFoodList] = useState([])
     useEffect(() => {

@@ -37,3 +37,8 @@
 .clicked {
   color: black;
 }
+@media (max-width: 550px) {
+  .place-order {
+    flex-wrap: wrap;
+  }
+}

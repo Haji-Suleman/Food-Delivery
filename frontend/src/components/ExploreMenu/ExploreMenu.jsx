@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./ExploreMenu.css"
 import { menu_list } from "../../assets/frontend_assets/assets"
-const ExploreMenu = ({ setCategory }) => {
+const ExploreMenu = ({ setCategory, category }) => {
+    const [hoverCategory, setHoverCategory] = useState(0)
+    useEffect(() => {
+        console.log(hoverCategory)
+    }, [hoverCategory])
     return (
         <div className='explore-menu' id="explore-menu">
             <h1>Explore Our menu</h1>
@@ -10,7 +14,10 @@ const ExploreMenu = ({ setCategory }) => {
                 {
                     menu_list.map((item, idx) => {
                         return (
-                            <div onClick={() => setCategory(prev => prev === item.menu_name ? "All" : item.menu_name)} key={idx} className='explore-menu-list-item'>
+                            <div onClick={() => {
+                                setHoverCategory(idx);
+                                setCategory(prev => prev === item.menu_name ? "All" : item.menu_name)
+                            }} key={idx} class={(hoverCategory === idx && category !== "All") ? "active-category" : ""} id='explore-menu-list-item'>
                                 <img src={item.menu_image} alt="" />
                                 <p>{item.menu_name}</p>
                             </div>
@@ -19,7 +26,7 @@ const ExploreMenu = ({ setCategory }) => {
                 }
             </div>
             <hr />
-        </div>
+        </div >
     )
 }
 
