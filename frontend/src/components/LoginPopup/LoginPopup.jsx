@@ -44,7 +44,7 @@ const LoginPopup = ({ setShowLogin }) => {
                 <div className="login-popup-container">
                     <div className="login-popup-title">
                         <h2>{currState}</h2>
-                        <img src={assets.cross_icon} alt="" onClick={() => { setShowLogin(false) }} />
+                        <img loading="lazy"src={assets.cross_icon} alt="" onClick={() => { setShowLogin(false) }} />
                     </div >
                     <div className="login-popup-inputs">
                         {currState === "Login" ? <></> :

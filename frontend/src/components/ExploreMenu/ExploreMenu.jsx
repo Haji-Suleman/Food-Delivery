@@ -18,7 +18,7 @@ const ExploreMenu = ({ setCategory, category }) => {
                                 setHoverCategory(idx);
                                 setCategory(prev => prev === item.menu_name ? "All" : item.menu_name)
                             }} key={idx} class={(hoverCategory === idx && category !== "All") ? "active-category" : ""} id='explore-menu-list-item'>
-                                <img src={item.menu_image} alt="" />
+                                <img loading="lazy" src={item.menu_image} alt="" />
                                 <p>{item.menu_name}</p>
                             </div>
                         )

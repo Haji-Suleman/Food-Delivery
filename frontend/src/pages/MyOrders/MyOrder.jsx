@@ -23,7 +23,7 @@ const MyOrder = () => {
                 {data.map((order, index) => {
                     return (
                         <div key={index} className='my-orders-order'>
-                            <img src={assets.parcel_icon} alt="" />
+                            <img loading="lazy"src={assets.parcel_icon} alt="" />
                             <p>{order.items.map((item, index) => {
                                 if (index === order.items.length - 1) {
                                     return item.name + " x " + item.quantity;

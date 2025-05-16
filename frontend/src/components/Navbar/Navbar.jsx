@@ -15,7 +15,7 @@ const Navbar = ({ setShowLogin }) => {
     }
     return (
         <div className='navbar'>
-            <Link to="/"><img src={assets.logo} alt="" className='logo' /></Link>
+            <Link to="/"><img loading="lazy"src={assets.logo} alt="" className='logo' /></Link>
             {search ? <input type="search" value={inputValue} onChange={(event) => setInputValue(event.target.value)} className='search-items' placeholder='Search...' autoFocus /> :
                 <div className="menu-div-container">
                     <ul className="navbar-menu">
@@ -27,18 +27,18 @@ const Navbar = ({ setShowLogin }) => {
                 </div>
             }
             <div className="navbar-right">
-                <img src={assets.search_icon} alt="" onClick={() => { setSearch(search ? false : true) }} />
+                <img loading="lazy"src={assets.search_icon} alt="" onClick={() => { setSearch(search ? false : true) }} />
                 <div className='navbar-search-icon'>
-                    <Link to="cart"><img src={assets.basket_icon} alt="" /></Link>
+                    <Link to="cart"><img loading="lazy"src={assets.basket_icon} alt="" /></Link>
                     <div className={Object.keys(cartItems).length === 0 ? "dynamic" : "dot"}>{Object.keys(cartItems).length}</div>
                 </div>
                 {!token ? <button onClick={() => setShowLogin(true)}>sign in</button> :
                     <div className='navbar-profile'>
-                        <img src={assets.profile_icon} alt="" />
+                        <img loading="lazy"src={assets.profile_icon} alt="" />
                         <ul className='nav-profile-dropdown'>
-                            <li onClick={() => navigate("/myorders")}><img src={assets.bag_icon} alt="" /><p>Orders</p></li>
+                            <li onClick={() => navigate("/myorders")}><img loading="lazy"src={assets.bag_icon} alt="" /><p>Orders</p></li>
                             <hr />
-                            <li onClick={logout}><img src={assets.logout_icon} alt="" /><p>Logout</p></li>
+                            <li onClick={logout}><img loading="lazy"src={assets.logout_icon} alt="" /><p>Logout</p></li>
                         </ul>
                     </div>
 
