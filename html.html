@@ -1,0 +1,809 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <title>CCS</title>
+     <meta name="google-site-verification" content="np5XLLoa3GcRbprqC4NM01Z1G2Us-VJtAfn2dKBYRII" />
+     <meta name="description" content="Cadet College Sanghar">
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="https://ccsanghar.edu.pk/assets/img/wpf-favicon.png"/>
+
+    <!-- CSS
+    ================================================== -->       
+    <!-- Bootstrap css file-->
+    <link href="https://ccsanghar.edu.pk/assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font awesome css file-->
+    <link href="https://ccsanghar.edu.pk/assets/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Superslide css file-->
+    <link rel="stylesheet" href="https://ccsanghar.edu.pk/assets/css/superslides.css">
+    <!-- Slick slider css file -->
+    <link href="https://ccsanghar.edu.pk/assets/css/slick.css" rel="stylesheet"> 
+    <!-- Circle counter cdn css file -->
+    <link rel='stylesheet prefetch' href='https://cdn.rawgit.com/pguso/jquery-plugin-circliful/master/css/jquery.circliful.css'> 
+    <!-- smooth animate css file -->
+    <link rel="stylesheet" href="https://ccsanghar.edu.pk/assets/css/animate.css"> 
+
+    <!-- gallery slider css -->
+    <link type="text/css" media="all" rel="stylesheet" href="https://ccsanghar.edu.pk/assets/css/jquery.tosrus.all.css" />    
+    <!-- Default Theme css file -->
+    <link id="switcher" href="https://ccsanghar.edu.pk/assets/css/themes/default-theme.css" rel="stylesheet">
+    <!-- Main structure css file -->
+    <link href="https://ccsanghar.edu.pk/assets/css/style.css" rel="stylesheet">
+    <link href="https://ccsanghar.edu.pk/assets/custom.css" rel="stylesheet">
+    <link href="https://ccsanghar.edu.pk/assets/css/owl.carousel.css" rel="stylesheet">
+   
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>   
+    <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>    
+<script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file '-->
+    <!--[if lt IE 9]>
+    
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+     [endif]-->
+     
+     
+     
+    <style>
+    .thumbnail {
+    padding:0px;
+}
+.panel {
+	position:relative;
+}
+.panel>.panel-heading:after,.panel>.panel-heading:before{
+	position:absolute;
+	top:11px;left:-16px;
+	right:100%;
+	width:0;
+	height:0;
+	display:block;
+	content:" ";
+	border-color:transparent;
+	border-style:solid solid outset;
+	pointer-events:none;
+}
+.panel>.panel-heading:after{
+	border-width:7px;
+	border-right-color:#f7f7f7;
+	margin-top:1px;
+	margin-left:2px;
+}
+.panel>.panel-heading:before{
+	border-right-color:#ddd;
+	border-width:8px;
+}
+    
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: #e4e134;
+}
+.menu_area li a:hover {
+    cursor: pointer;
+}
+    
+    
+    
+    @media (min-width: 1024px) {
+      body{
+        width:100% !important;
+        margin: 0 auto !important;
+        box-shadow: 0 0 50px rgba(0,0,0,0.8) !important;
+      }
+      .navbar-default {
+       width:100% !important;
+       margin:0 auto !important;
+      }
+      }
+      
+      
+       @media (max-width: 400px) {
+      .img{
+        width:100% !important;
+        height: 30px !important;
+        margin-left: -25px !important;
+        margin-top: 2px !important;
+        
+      }
+    
+      }
+       @media (max-width: 500px) {
+      .img{
+        width:100% !important;
+        height: 35px !important;
+        margin-left: -25px !important;
+        margin-top: 2px !important;
+        
+      }
+    
+      }
+        @media (max-width: 600px) {
+      .img{
+        width:100% !important;
+        height: 35px !important;
+        margin-left: -25px !important;
+        margin-top: 2px !important;
+        
+      }
+    
+      }
+      
+       @media (max-width: 400px) {
+      .cadet{
+        
+       font-size:10px !important;
+        margin-left: -25px !important;
+        margin-top: 2px !important;
+        
+      }
+    
+      }
+       @media (max-width: 500px) {
+      .cadet{
+        font-size:10px !important;
+        margin-left: -25px !important;
+        margin-top: 2px !important;
+        
+      }
+    
+      }
+        @media (max-width: 600px) {
+      .cadet{
+        font-size:8px !important;
+        margin-left: -25px !important;
+        margin-top: 2px !important;
+        
+      }
+    
+      }
+       @media (max-width: 400px) {
+      .italic{
+        
+       font-size:10px;
+        margin-left: -38% !important;
+        margin-top: -5% !important;
+        
+      }
+    
+      }
+       @media (max-width: 500px) {
+      .italic{
+        font-size:10px;
+        margin-left: -38% !important;
+        margin-top: -5% !important;
+        
+      }
+    
+      }
+        @media (max-width: 600px) {
+      .italic{
+        font-size:8px !important;
+        margin-left: -38% !important;
+        margin-top: -5% !important;
+        
+      }
+    
+      }
+       @media (max-width: 400px) {
+      .imgr{
+        
+        height: 15px !important;
+        margin-left: 50% !important;
+        margin-top: 2px !important;
+        
+      }
+    
+      }
+       @media (max-width: 500px) {
+      .imgr{
+        height: 15px !important;
+        margin-left: 50% !important;
+        margin-top: 2px !important;
+        
+      }
+    
+      }
+        @media (max-width: 600px) {
+      .imgr{
+        height: 15px !important;
+        margin-left: 70% !important;
+        margin-top: 2px !important;
+        
+      }
+    
+      }
+      
+      
+       @media (max-width: 400px) {
+      .strives{
+        
+       font-size:4px !important;
+        margin-left: 70% !important;
+        margin-top: 2px !important;
+        
+      }
+    
+      }
+       @media (max-width: 500px) {
+      .strives{
+        font-size:4px;
+        margin-left: 70% !important;
+        margin-top: 2px !important;
+        
+      }
+    
+      }
+        @media (max-width: 600px) {
+      .strives{
+        font-size:6px !important;
+        margin-left: 70% !important;
+        margin-top: 2px !important;
+        
+      }
+    
+      }
+      @media (max-width: 400px) {
+      .item_img{
+        
+       
+        margin-left: 31% !important;
+       
+        
+      }
+    
+      }
+       @media (max-width: 500px) {
+      .item_img{
+        margin-left: 31% !important;
+        
+      }
+    
+      }
+        @media (max-width: 600px) {
+      .item_img{
+        margin-left: 31% !important;
+        
+      }
+    
+      }
+       .cadet_login{
+        padding-right: 20px;
+  	 margin-left: 7%;
+    	/* padding-top: 20px; */
+    	font-size: 12px;
+        
+      }
+       .cadet_login a
+       {
+       font-size:10px;
+       }
+       @media (max-width: 1318px) {
+      .cadet_login{
+       margin-left: 7%; !important;
+        
+      }
+    
+      }
+       @media (max-width: 1271px) {
+      .cadet_login{
+       margin-left: 3%; !important;
+        
+      }
+    
+      }
+      .menu
+      {
+      margin-left: 70px;
+      width:100%
+      }
+       @media (max-width: 1318px) {
+      .menu{
+      margin-left: 35px; !important;
+        
+      }
+    
+      }
+       @media (max-width: 1271px) {
+      .menu{
+      margin-left: 15px; !important;
+        
+      }
+    
+      }
+       @media (max-width: 1210px) {
+      .menu{
+      margin-left: 0px; !important;
+        
+      }
+    
+      }
+      @media (max-width: 11183px) {
+      #top-menu{
+      margin-left: 4%; !important;
+        
+      }
+    
+      }
+      
+      
+      .modal-content {
+    -webkit-border-radius: 0;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 0;
+    -moz-background-clip: padding;
+    border-radius: 6px;
+    background-clip: padding-box;
+    -webkit-box-shadow: 0 0 40px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 0 40px rgba(0,0,0,.5);
+    box-shadow: 0 0 40px rgba(0,0,0,.5);
+    color: #000;
+    background-color: #fff;
+    border: rgba(0,0,0,0);
+}
+.modal-message .modal-dialog {
+    width: 300px;
+}
+.modal-message .modal-body, .modal-message .modal-footer, .modal-message .modal-header, .modal-message .modal-title {
+    background: 0 0;
+    border: none;
+    margin: 0;
+    padding: 0 20px;
+    text-align: center!important;
+}
+
+.modal-message .modal-title {
+    font-size: 17px;
+    color: #737373;
+    margin-bottom: 3px;
+}
+
+.modal-message .modal-body {
+    color: #737373;
+}
+
+.modal-message .modal-header {
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 15px 0 8px;
+}
+.modal-message .modal-header .fa, 
+.modal-message .modal-header 
+.glyphicon, .modal-message 
+.modal-header .typcn, .modal-message .modal-header .wi {
+    font-size: 30px;
+}
+
+.modal-message .modal-footer {
+    margin: 25px 0 20px;
+    padding-bottom: 10px;
+}
+
+.modal-backdrop.in {
+    zoom: 1;
+    filter: alpha(opacity=75);
+    -webkit-opacity: .75;
+    -moz-opacity: .75;
+    opacity: .75;
+}
+.modal-backdrop {
+    background-color: #fff;
+}
+.modal-message.modal-success .modal-header {
+    color: #53a93f;
+    border-bottom: 3px solid #a0d468;
+}
+
+.modal-message.modal-info .modal-header {
+    color: #57b5e3;
+    border-bottom: 3px solid #57b5e3;
+}
+
+.modal-message.modal-danger .modal-header {
+    color: #d73d32;
+    border-bottom: 3px solid #e46f61;
+}
+
+.modal-message.modal-warning .modal-header {
+    color: #f4b400;
+    border-bottom: 3px solid #ffce55;
+}
+
+
+      
+      </style>
+  </head>
+  <body>
+
+    <div class="slider-height" style="display:none;min-height: 522px;"></div>    
+    <!-- SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#"><strong><i class="fa fa-arrow-up fa-3x" aria-hidden="true"></i></strong></a>
+    <!-- END SCROLL TOP BUTTON -->
+    <!--=========== BEGIN HEADER SECTION ================-->
+    
+    <header id="header">
+      <!-- BEGIN MENU -->
+      <!--<div class="col-md-2" style="margin-left:30px"></div>-->
+
+
+
+<div class="col-sm-12 headr">
+	
+	<!--Add new img-->
+	
+	
+	<div class="row">
+	<img src="https://ccsanghar.edu.pk/assets/img/Header1.jpg" class="img-responsive" style="width:100%;height:50%" >
+	<div>
+	
+	<!--End new img-->
+	
+      <!--<div class="col-sm-1 col-xs-2">
+	<a href="#">
+	<img src="https://ccsanghar.edu.pk/assets/img/img2.png" class="img-responsive img" style="margin:5px;">
+    </a>
+    </div>
+    <div class="col-lg-7 col-sm-7 col-xs-5">
+		<h3 style="margin-left:30px" class="cadet"><b>CADET COLLEGE SANGHAR</b></h3>
+        <p style="margin-left:30px;margin-top:13px; font-style: italic;" class="italic">The Nuclei of Quality Education</p>
+        </div>
+        
+         <div class="col-sm-3">
+   <img src="https://ccsanghar.edu.pk/assets/img/q1.png" class="img-responsive imgr" style="height: 30px; margin-top:40px;margin-left:20px;">
+         <p style="color:#FFFFFF; margin-top:10px;font-size:12px" class="strives">Man gets whatever he strives for (Al-Quraan)</p>
+         </div>-->
+    
+
+
+</div>
+
+
+
+
+      <div class="menu_area">
+  
+    
+        <nav class="navbar-header menu"   role="navigation">  
+               
+ 
+        <div class="container">
+           <div class="navbar-inverse">
+                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynav2">
+                  <span class="sr-only">Toggle Navigation</span>
+                 <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+                </button>
+	</div>
+              <!-- LOGO  navbar-fixed-top-->
+              <!-- TEXT BASED LOGO -->
+                            
+              <!-- IMG BASED LOGO   <div class="image_logo" style="margin-left:-20px;"> <img src="https://ccsanghar.edu.pk/assets/img/logo-new.png" class="img-responsive" alt="img">    </div> -->
+               <!-- float: right!important;
+    margin-right: 150px !important;<a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"></a>  -->            
+                     
+            </div>
+
+          
+          <div class="navbar-collapse collapse" id="mynav2">
+              <ul id="top-menu" class="nav navbar-nav main-nav" style="width:100%">
+                <li class="active"><a href="https://ccsanghar.edu.pk/">HOME</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ABOUT<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <!--<li><a href="Front_home\aim_mission">Aim,Vision & Mission</a></li>-->
+                    <!--<li><a href="Front_home\quality_policy">Quality Policy</a></li>-->
+                    <li><a href="https://ccsanghar.edu.pk/Front_home\about_ccs">About CCS</a></li>   
+                    <li><a href="https://ccsanghar.edu.pk/Front_home\martyre">Martyrs</a></li>     
+                    <!--<li><a href="Front_home\map">Map</a></li>               -->
+                                                              
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ACADEMICS<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="https://ccsanghar.edu.pk/Front_home\training_procedure">Training Procedure</a></li>
+                    <!--<li><a href="Front_home\exam_schedule">Exam Schedule</a></li>-->
+                    <!--<li><a href="Front_home\appointment_holder">Appointment Holder</a></li>  -->             
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">LIFE AT CCS<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="https://ccsanghar.edu.pk/Front_home\dailyroutine">Daily Routine</a></li>
+                    <li><a href="https://ccsanghar.edu.pk/Front_home\gallery">Gallery</a></li>
+                    <!--<li><a href="Front_home\Curricular_Activities">Co-Curricular Activities</a></li>-->
+                    <!-- <li><a href="Front_home\weekly_Activities">Weekly Activities</a></li>  -->
+                    <!--   <li><a href="Front_home\holiday">Holidays & Vacation</a></li>-->
+                       <!-- <li><a href="#">Sport & Events</a></li>-->
+                                     
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ADMISSION<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="https://ccsanghar.edu.pk/Front_home\admission_policy">Admission Policy</a></li>
+                   <li><a href="https://ccsanghar.edu.pk/Front_home\result">Entry Test Results</a></li>
+                    <!--<li><a href="Front_home\fee_structure">Fee Structure</a></li>       -->
+                     <li><a href="https://ccsanghar.edu.pk/Front_home\adm_form">Admission Form</a></li>       
+                  </ul>
+                </li>                
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ADMINISTRATION<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="https://ccsanghar.edu.pk/Front_home\chairman_bog">Chairman BoG</a></li>
+                    <li><a href="https://ccsanghar.edu.pk/Front_home\members_bog">Memebers BoG</a></li>
+                    <li><a href="https://ccsanghar.edu.pk/Front_home\the_commandant_message">The Commandant</a></li> 
+                    <li><a href="https://ccsanghar.edu.pk/Front_home\administration\Faculty">Our Faculty</a></li>
+                    <li><a href="https://ccsanghar.edu.pk/Front_home\administration\Admin">Admin Staff</a></li> 
+                    <li><a href="https://ccsanghar.edu.pk/Front_home\administration2\Principal">Ex Co Principal</a></li>               
+                  </ul>
+                </li>
+                 <li><a href="https://ccsanghar.edu.pk/Front_home\alu_show">ALUMNI</a></li>
+                  <li><a href="https://ccsanghar.edu.pk/Front_home\contact">CONTACT</a></li>
+                  <li class="active"><a href="https://ccsanghar.edu.pk/Front_home\download_view">DOWNLOAD</a></li>
+                   <!-- <li><a href="http://ccsanghar.edu.pk/edusolutions/">LOGIN</a></li>
+                   <li class="cadet_login"><a href="http://ccsanghar.edu.pk/portal">Cadet Login</a></li>
+                    <li><a data-toggle="modal" data-target="#LoginModal">LOGIN</a></li>
+-->
+              </ul>   
+            <!-- <li style="
+    margin-top: 15px;
+"><a href="http://ccsanghar.edu.pk/portal" style="
+    float: right;font-size: 9px;
+    text-decoration: none;
+    padding-top:5px;
+    margin-right: -0px;;
+">Cadet Login</a></li>     -->  
+            </div><!--/.nav-collapse -->
+            
+          </div>     
+        </nav>
+         
+      </div>
+      <!-- END MENU -->    
+    </header>
+    <!--=========== END HEADER SECTION ================--> 
+<!-- Modal -->
+<div id="LoginModal" class="modal fade" role="dialog"  style="vertical-align: middle;">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header" style="background-image: url('https://ccsanghar.edu.pk/assets/login_back.png'); background-repeat: no-repeat;background-attachment: fixed;background-size: 100%;">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <center><a href="http://portal.ccsanghar.edu.pk/" class="btn btn-primary" style="width:130px; hight:70px;margin-left:10px;margin-right:10px;">LOGIN</a><a href="http://portal.ccsanghar.edu.pk/portal" class="btn btn-primary" style="width:130px; hight:70px;margin-left:10px;margin-right:10px;">CADET LOGIN</a></center> 
+      </div>
+    </div>
+
+  </div>
+</div>
+      <div class="row">        
+       <div class="col-lg-1 col-sm-2">
+   </div>        
+        <div class="col-lg-10 col-sm-12" style="clear: both; margin-left: 8%;margin-bottom: 4%">
+        <div class="page-title" style="background-color: #d0d0cf; margin-bottom: 3%; margin-top: 10px;">
+      <!-- <h2><span style="height: 3px;background: #333;width: 50px;float: left;margin-top: 2%;margin-left: 5%;width: 22px; margin-right: 10px; "></span>Result</h2>-->
+
+            <div class="breadCrumbHolder module">
+                <div id="bread_crumb" class="breadCrumb module">
+                    <div style="overflow:hidden; position:relative;  width: 509px;">
+                        <div>
+                            <ul style="width: 5000px;margin-left: 11%; padding-bottom: 9px">
+                                <li class="first" style="margin-top: 10px;">
+                                    <a href="https://ccsanghar.edu.pk/">Home</a>      / &nbsp; Result</li>
+                               
+                                         
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>        <!-- Bread Crumb * End * -->
+        </div>
+            <div class="inner-page" style="width: 100%; margin-left:0;">
+
+        <!-- CONTENT MIDDLE * START * -->
+
+        <div class="login" id="entry_test" style="margin-left: 0;width: 430px;background: #d0d0cf;border-radius: 0px 0px 0px 0px; margin: 0 auto; float: none; margin-top: 20px;padding-left: 10px;padding-top: 1px;padding-bottom: 10px">
+         <h3><img src="https://ccsanghar.edu.pk/assets/icons/login_icon.png"> Result</h3>
+
+
+
+               <form  action="https://ccsanghar.edu.pk/"  enctype="multipart/form-data"  method="post">                 
+
+
+
+                    <input type="text" name="roll_no" value="No Record Found.." class="phone search-roll" required="" readonly="true">
+                    
+
+
+
+                </form>
+       </div><!--ends login-->
+        <div style="clear:both; margin-bottom: 20px;"></div>
+       <!-- CONTENT MIDDLE * END *http://ccsanghar.edu.pk/home/get_entry_test -->
+
+
+
+    </div>
+        </div>
+    </div><!--=========== BEGIN FOOTER SECTION ================-->
+    <footer id="footer">
+      <!-- Start footer top area -->
+      <div class="footer_top">
+        <div class="">
+          <div class="row">
+            <div class="col-lg-3  col-md-6 col-sm-12">
+              <div class="single_footer_widget">
+                <h3 id="grad">About Us</h3>
+                <ul class="footer_widget_nav">
+                  <li><a href="https://ccsanghar.edu.pk/Front_home\aim_mission">Aim, Mission & Vision</a></li>
+                  <li><a href="https://ccsanghar.edu.pk/Front_home\quality_policy">Quality Policy</a></li>
+                  <li><a href="https://ccsanghar.edu.pk/Front_home\martyre">The Martyrs</a></li>
+                  <li><a href="https://ccsanghar.edu.pk/Front_home\map">Map</a></li>
+                  <li><a href="https://ccsanghar.edu.pk/Front_home\about_ccs">About CCS</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-sm-12">
+              <div class="single_footer_widget">
+                <h3 id="grad">Life at CCS</h3>
+                <ul class="footer_widget_nav">
+                  <li><a href="https://ccsanghar.edu.pk/Front_home\dailyroutine">Daily Routine</a></li>
+                  <li><a href="https://ccsanghar.edu.pk/Front_home\gallery">Gallery</a></li>
+                  <!--<li><a href="Front_home\Curricular_Activities">Co-Curricular Activities</a></li>-->
+                  <!--<li><a href="Front_home\weekly_Activities">Weekly Activites</a></li>-->
+                  <!--<li><a href="Front_home\holiday">Holidays and Vacations</a></li>-->
+                  <li><a href="#">Sports and Events</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-sm-12">
+              <div class="single_footer_widget">
+                <h3 id="grad">Admissions</h3>
+                <ul class="footer_widget_nav">
+                  <li><a href="https://ccsanghar.edu.pk/Front_home\admission_policy">Admission Policy</a></li>
+                  <li><a href="https://ccsanghar.edu.pk/Front_home\entry_test_result">Entry Test Result</a></li>
+                  <!--<li><a href="Front_home\fee_structure">Fee Structure</a></li>-->
+                 
+                  
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="single_footer_widget">
+                <h3 id="grad">Social Links</h3>
+                <ul class="footer_social">
+                  <li><a target="_blank" data-toggle="tooltip" data-placement="top" title="Facebook" class="soc_tooltip" href="https://www.facebook.com/CadetCollegeSanghar/"><i class="fa fa-facebook"></i></a></li>
+                  <!--<li><a data-toggle="tooltip" data-placement="top" title="Twitter" class="soc_tooltip"  href="#"><i class="fa fa-twitter"></i></a></li>-->
+                  <!--<li><a data-toggle="tooltip" data-placement="top" title="Google+" class="soc_tooltip"  href="#"><i class="fa fa-google-plus"></i></a></li>-->
+                  <!--<li><a data-toggle="tooltip" data-placement="top" title="Linkedin" class="soc_tooltip"  href="#"><i class="fa fa-linkedin"></i></a></li>-->
+                  <li><a target="_blank" data-toggle="tooltip" data-placement="top" title="Youtube" class="soc_tooltip"  href="https://www.youtube.com/channel/UC8hCncq58s5VB1qqbBWSnTA"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+         <h4 style="float:right;margin-right:30px">Total Vistors : </h4>
+      </div>
+      <!-- End footer top area -->
+
+      <!-- Start footer bottom area -->
+      <div class="footer_bottom">
+        <div style="margin:5px;">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="">
+                <p> Copyright &COPY Cadet College Sanghar</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="footer_bootomRight" >
+                <p>Website Hosted by <a href="https://gexton.com/" rel="nofollow" style="margin-right: 12%;">Gexton Inc</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End footer bottom area -->
+    </footer>
+    <!--=========== END FOOTER SECTION ================--> 
+
+  
+
+    <!-- Javascript Files
+    ================================================== -->
+
+    <!-- initialize jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Preloader js file -->
+    <!--<script src="assets/js/queryloader2.min.js" type="text/javascript"></script>-->
+    <!-- For smooth animatin  -->
+    <script src="https://ccsanghar.edu.pk/assets/js/wow.min.js"></script> 
+    <!-- Bootstrap js -->
+    <script src="https://ccsanghar.edu.pk/assets/js/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script src="https://ccsanghar.edu.pk/assets/js/slick.min.js"></script>
+    <!-- superslides slider -->
+    <script src="https://ccsanghar.edu.pk/assets/js/jquery.easing.1.3.js"></script>
+    <script src="https://ccsanghar.edu.pk/assets/js/jquery.animate-enhanced.min.js"></script>
+    <script src="https://ccsanghar.edu.pk/assets/js/jquery.superslides.min.js" type="text/javascript" charset="utf-8"></script>   
+    <!-- for circle counter -->
+    <script src='https://cdn.rawgit.com/pguso/jquery-plugin-circliful/master/js/jquery.circliful.min.js'></script>
+    <!-- Gallery slider -->
+    <script type="text/javascript" language="javascript" src="https://ccsanghar.edu.pk/assets/js/jquery.tosrus.min.all.js"></script>   
+   
+    <!-- Custom js-->
+    <script src="https://ccsanghar.edu.pk/assets/js/custom.js"></script>
+     <script src="https://ccsanghar.edu.pk/assets/js/owl.carousel.js"></script>
+   <script>
+	$(document).ready(function() {
+if($('#client-wrapper').length > 0) { 
+  $("#client-wrapper").owlCarousel({
+      autoPlay: 20000, //Set AutoPlay to 20 seconds
+      items : 6,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3]
+ 
+  });
+ }
+});
+   </script>
+   
+   <script type="text/javascript">
+    $(window).on('load',function(){
+       // $('#Mymodal').modal('show');
+        $("#Mymodal").modal('show');
+        setTimeout(function() { $("#Mymodal").modal('hide'); }, 10000);
+    });
+</script>
+   <script type="text/javascript">
+
+    $(".abc").on("keypress", function (event) {
+            var englishAlphabetAndWhiteSpace = /[A-Za-z ]/g;
+            var key = String.fromCharCode(event.which);
+            if (event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 37 || event.keyCode == 39 || englishAlphabetAndWhiteSpace.test(key)) {
+                return true;
+            }
+            return false;
+        });
+         $('.abc').on("paste", function (e) {
+           // e.preventDefault();
+        });
+        $(".abc1").on("keypress", function (event) {
+            var englishAlphabetAndWhiteSpace = /[A-Za-z0-9|-]/g;
+            var key = String.fromCharCode(event.which);
+            if (event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 32 || event.keyCode == 37 || event.keyCode == 39 || englishAlphabetAndWhiteSpace.test(key)) {
+                return true;
+            }
+            return false;
+        }); $('.abc1').on("paste", function (e) {
+            //e.preventDefault();
+        });
+        $(document).bind("contextmenu", function (e) {
+          //  e.preventDefault();
+        });
+         //form only numbers
+        $(".num").on("keypress", function (e) {
+            var evt = (e) ? e : window.event;
+            var charCode = (evt.keyCode) ? evt.keyCode : evt.which;
+            if ((charCode > 31 && (charCode < 46 || charCode > 57)) ) {
+                return false;
+            }
+            return true;
+        });
+    </script> 
+    
+  </body>
+</html>

@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/api/:path*",
-      "destination": "https://fully-functional-food-web-production-b639.up.railway.app/api/:path*"
-    }
-  ]
-}
