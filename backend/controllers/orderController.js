@@ -4,7 +4,7 @@ import Stripe from "stripe";
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 //placing user order
 const placeOrder = async (req, res) => {
-  const frontend_url = "food-delivery-frontend-delta-two.vercel.app";
+  const frontend_url = "https://food-delivery-frontend-delta-two.vercel.app";
   try {
     const newOrder = new orderModel({
       userId: req.body.userId,
