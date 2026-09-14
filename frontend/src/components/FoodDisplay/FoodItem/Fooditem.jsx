@@ -7,7 +7,8 @@ const Fooditem = ({ id, name, price, description, image, category }) => {
   return (
     <div className='food-item' >
       < div className="food-item-img-container" >
-        <img loading="lazy" className='food-item-image' src={url + "/images/" + image} alt="" onClick={() => { FoodPopup(id) }} />
+        <img loading="lazy" className='food-item-image' src={image} alt="" onClick={() => { FoodPopup(id) }} />
+
         {!cartItems[id] ?
           <img loading="lazy" className='add' onClick={() => addToCart(id)} src={assets.add_icon_white} alt="" /> :
           <div className='food-item-counter'>

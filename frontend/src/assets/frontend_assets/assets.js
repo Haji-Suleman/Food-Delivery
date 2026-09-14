@@ -116,7 +116,7 @@ export const menu_list = [
   },
 ];
 
-export const food_list = [
+export const FOODLIST = [
   {
     _id: "1",
     name: "Greek salad",

@@ -1,10 +1,11 @@
 import axios from "axios";
 import { createContext, useEffect, useState } from "react";
+import { FOODLIST } from "../assets/frontend_assets/assets";
 export const StoreContext = createContext(null);
 const StoreContextProvider = (props) => {
     const [cartItems, setCartItems] = useState({})
     const [inputValue, setInputValue] = useState("");
-    const url = "https://fully-functional-food-web-production-b639.up.railway.app";
+    const url = "http://localhost:4000";
     const [token, setToken] = useState("")
     const [food_list, setFoodList] = useState([])
     useEffect(() => {
@@ -67,8 +68,8 @@ const StoreContextProvider = (props) => {
         return totalAmount;
     }
     const fetchFoodList = async () => {
-        const response = await axios.get(`${url}/api/food/list`)
-        setFoodList(response.data.data);
+        const response = FOODLIST
+        setFoodList(response);
     }
     const loadCartData = async (token) => {
         const response = await axios.post(url + "/api/cart/get", {}, { headers: { token } });
